@@ -18,8 +18,8 @@ if [ $option == "y" ] || [ $option == "Y" ] ; then
     sudo chmod -R 777 /home/pi/video
     
     mkdir ./bin
-    cd ./bin
-    sudo nano script_auto_run
+    cp script_auto_run ./bin
+    sudo chmod 755 ./bin/script_auto_run
 
 
 fi
