@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to start our application
+echo "Demarrage de la TV..."
+
+while true; do
+mplayer -vo fbdev2:/dev/fb1 -fs 1 /home/pi/video/*.mp4
+sleep 1
+done
