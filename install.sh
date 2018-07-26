@@ -33,6 +33,9 @@ if [ $option == "y" ] || [ $option == "Y" ] ; then
     
     cp script_auto_run /bin
     sudo chmod 755 /bin/script_auto_run
+    
+    #Demarrage auto du script
+    sed -i 's|exit 0|/newly/inserted/path/to/script3.sh \&\nexit 0|' /etc/rc.local
 
 
 fi
