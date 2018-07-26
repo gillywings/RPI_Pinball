@@ -22,7 +22,7 @@ if [ $option == "y" ] || [ $option == "Y" ] ; then
     apt-get install mplayer -y
     
     #Installation de git
-    apt-get install git -y
+    #apt-get install git -y
     
     #Création des dossiers nécessaires
     mkdir /mnt/USB
